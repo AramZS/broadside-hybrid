@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+/********************************************************************************
+
+This is the ThemeFit slideshow core css. We do not recommend 
+modifying the css in this file. To cusomize the slideshow, 
+edit themefit.slideshow.customize.css
+
+*********************************************************************************/
+
+/*==========================================
+ reset all containers
+==========================================*/
+
+div.tf-slideshow-wrapper, 
+div.tf-slideshow-wrapper div.tf-slideshow-slide-list-container,
+div.tf-slideshow-wrapper div.tf-slideshow-slide-list-container ul.tf-slideshow-slide-list,
+div.tf-slideshow-wrapper div.tf-slideshow-slide-list-container ul.tf-slideshow-slide-list li.tf-slideshow-slide,
+div.tf-slideshow-wrapper div.tf-slideshow-slide-list-container ul.tf-slideshow-slide-list li.tf-slideshow-slide img.tf-slideshow-image
+{ 
+	margin: 0; 
+	padding: 0; 
+}
+
+/*==========================================
+ slideshow wrapper
+==========================================*/
+
+div.tf-slideshow-wrapper{ overflow: hidden; }
+
+/*==========================================
+ list of slides
+==========================================*/
+
+div.tf-slideshow-wrapper div.tf-slideshow-slide-list-container
+{
+	position: relative;
+	float: left;
+	width: 100%;
+    height: auto;
+	background: #EEE url(../images/loader.gif) no-repeat center;
+	overflow: hidden;
+}
+
+div.tf-slideshow-wrapper div.tf-slideshow-slide-list-container ul.tf-slideshow-slide-list
+{
+	list-style: none;
+	width: 100000px;
+}
+
+/*==========================================
+ slides / slide contents
+==========================================*/
+
+div.tf-slideshow-wrapper div.tf-slideshow-slide-list-container ul.tf-slideshow-slide-list li.tf-slideshow-slide
+{
+	display: block;
+	float: left;
+	width: auto;
+	border: none;
+}
+
+div.tf-slideshow-wrapper div.tf-slideshow-slide-list-container ul.tf-slideshow-slide-list li.tf-slideshow-slide img.tf-slideshow-image
+{
+	border: none;
+	display: block;
+	visibility: hidden;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+html.ie div.tf-slideshow-wrapper div.tf-slideshow-slide-list-container ul.tf-slideshow-slide-list li.tf-slideshow-slide img.tf-slideshow-image
+{
+	-ms-interpolation-mode: bicubic;
+	zoom: 1;
+}
+
+/*==========================================
+ slide titles
+==========================================*/
+
+div.tf-slideshow-wrapper div.tf-slideshow-controls a.tf-slideshow-title
+{
+	display: block;
+	margin-right: 140px;
+	width: auto;
+	overflow: hidden;
+}
+
+/*==========================================
+ slideshow controls
+==========================================*/
+
+div.tf-slideshow-wrapper div.tf-slideshow-controls
+{
+	float: left;
+	position: relative;
+	width: 100%;
+	margin-top: -2px; /* hide bottom edge of image, broswer resize can distort it */
+	z-index: 9999;
+}
+
+div.tf-slideshow-wrapper div.tf-slideshow-controls div.tf-slideshow-arrows
+{
+	position: absolute;
+	right: 0;
+	top: 0;
+	min-width: 20px;
+	min-height: 20px;
+	z-index: 9999;
+}
+
+div.tf-slideshow-wrapper div.tf-slideshow-controls a.tf-slideshow-left-arrow, 
+div.tf-slideshow-wrapper div.tf-slideshow-controls a.tf-slideshow-right-arrow
+{
+	display: block;
+	float: right;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.5;
+	cursor: auto;
+}
+
+html.ie div.tf-slideshow-wrapper div.tf-slideshow-controls a.tf-slideshow-left-arrow, 
+html.ie div.tf-slideshow-wrapper div.tf-slideshow-controls a.tf-slideshow-right-arrow
+{
+	zoom: 1;
+	filter: alpha(opacity=50);
+}
+
+div.tf-slideshow-wrapper div.tf-slideshow-controls a.tf-slideshow-enabled
+{
+	opacity: 1;
+	cursor: pointer;
+}
+
+html.ie div.tf-slideshow-wrapper div.tf-slideshow-controls a.tf-slideshow-enabled { filter:alpha(opacity=100); }
+
+/***********************************************************
+
+Customize the ThemeFit slideshow styles here.
+
+************************************************************/
+
+/*==========================================
+ slide titles
+==========================================*/
+
+div.tf-slideshow-wrapper div.tf-slideshow-controls a.tf-slideshow-title
+{
+	color: #FFF; 
+	text-decoration: none;
+	margin-left: 15px; 
+	margin-top: 14px;
+	font-size: 13px;
+	line-height: 14px;
+	padding-bottom: 10px;
+}
+
+/*==========================================
+ slideshow controls
+==========================================*/
+
+div.tf-slideshow-wrapper div.tf-slideshow-controls { min-height:40px; }
+
+div.tf-slideshow-wrapper div.tf-slideshow-controls div.tf-slideshow-arrows { padding:2px; }
+
+div.tf-slideshow-wrapper div.tf-slideshow-controls a.tf-slideshow-title:hover { color: #AAA; }
+
+div.tf-slideshow-wrapper div.tf-slideshow-controls a.tf-slideshow-left-arrow, 
+div.tf-slideshow-wrapper div.tf-slideshow-controls a.tf-slideshow-right-arrow
+{
+	width: 50px;
+	height: 32px;
+	color: #FFF;
+	margin: 2px;
+}
+
+div.tf-slideshow-wrapper div.tf-slideshow-controls a.tf-slideshow-left-arrow
+{
+	background-image:	url('../images/leftarrow.png');
+}
+
+div.tf-slideshow-wrapper div.tf-slideshow-controls a.tf-slideshow-right-arrow
+{
+	background-image:	url('../images/rightarrow.png');
+}

@@ -1,0 +1,766 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ThemeFit Hybrid\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-23 12:04-0500\n"
+"PO-Revision-Date: 2012-01-23 12:05-0500\n"
+"Last-Translator: \n"
+"Language-Team: ThemeFit <support@themefit.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:4
+msgid "Error 404"
+msgstr ""
+
+#: ../404.php:8
+msgid "Sorry about that. Try searching for another page."
+msgstr ""
+
+#: ../archive.php:24
+msgid "Author Archive"
+msgstr ""
+
+#: ../archive.php:27
+msgid "Blog"
+msgstr ""
+
+#: ../archive.php:70
+#: ../index.php:46
+msgid "Nothing found"
+msgstr ""
+
+#: ../archive.php:74
+#: ../index.php:50
+#: ../search.php:40
+msgid "Didn't find any posts that matched your search. Try something else."
+msgstr ""
+
+#: ../comments.php:7
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: ../comments.php:15
+msgid "No Responses"
+msgstr ""
+
+#: ../comments.php:16
+msgid "One Response"
+msgstr ""
+
+#: ../comments.php:17
+msgid "% Responses"
+msgstr ""
+
+#: ../comments.php:42
+msgid "Leave a Reply"
+msgstr ""
+
+#: ../comments.php:42
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: ../comments.php:49
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: ../comments.php:56
+#, php-format
+msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>. <a href=\"%s\" title=\"Log out of this account\">Log out &raquo;</a>"
+msgstr ""
+
+#: ../comments.php:62
+msgid "Name"
+msgstr ""
+
+#: ../comments.php:67
+msgid "Email"
+msgstr ""
+
+#: ../comments.php:72
+msgid "Website"
+msgstr ""
+
+#: ../comments.php:84
+msgid "Submit Reply"
+msgstr ""
+
+#: ../footer.php:6
+#: ../functions.php:236
+msgid "Upper Footer Widgets"
+msgstr ""
+
+#: ../footer.php:8
+msgid "Footer Widget Area"
+msgstr ""
+
+#: ../footer.php:10
+msgid "You can add footer widgets to this area from the WordPress admin in \"Upper Footer Widgets.\""
+msgstr ""
+
+#: ../footer.php:12
+msgid "Add Widgets"
+msgstr ""
+
+#: ../functions.php:114
+msgid "Read More &rarr;"
+msgstr ""
+
+#: ../functions.php:216
+msgid "Post Sidebar Widgets"
+msgstr ""
+
+#: ../functions.php:218
+msgid "Widgets for sidebar on a post."
+msgstr ""
+
+#: ../functions.php:226
+msgid "Page Sidebar Widgets"
+msgstr ""
+
+#: ../functions.php:228
+msgid "Widgets for sidebar on a page."
+msgstr ""
+
+#: ../functions.php:238
+msgid "These are the widgets for the upper footer."
+msgstr ""
+
+#: ../functions.php:257
+msgid "Main Nav"
+msgstr ""
+
+#: ../functions.php:287
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../functions.php:294
+msgid "Reply"
+msgstr ""
+
+#: ../functions.php:294
+msgid "Log in to Reply"
+msgstr ""
+
+#: ../functions.php:310
+msgid "Attachment ID"
+msgstr ""
+
+#: ../functions.php:310
+msgid "<span style=\"color:#FF0000;\">"
+msgstr ""
+
+#: ../functions.php:358
+msgid "TF Slideshow"
+msgstr ""
+
+#: ../functions.php:358
+msgid "Add Link (URL) to Image"
+msgstr ""
+
+#: ../header.php:19
+#, php-format
+msgid "Tag Archive for &quot;%s&quot;"
+msgstr ""
+
+#: ../header.php:25
+msgid "Archive"
+msgstr ""
+
+#: ../header.php:29
+#, php-format
+msgid "Search for &quot;%s&quot;"
+msgstr ""
+
+#: ../header.php:39
+msgid "Not Found"
+msgstr ""
+
+#: ../header.php:56
+#, php-format
+msgid "page %s"
+msgstr ""
+
+#: ../header.php:74
+msgid "Menu"
+msgstr ""
+
+#: ../search.php:8
+msgid "Results"
+msgstr ""
+
+#: ../search.php:36
+msgid "No Results"
+msgstr ""
+
+#: ../search.php:48
+msgid "Empty Search"
+msgstr ""
+
+#: ../search.php:52
+msgid "You forgot to enter a search term."
+msgstr ""
+
+#: ../searchform.php:5
+msgid "Search"
+msgstr ""
+
+#: ../single.php:31
+msgid "Edit this entry"
+msgstr ""
+
+#: ../admin/admin-interface.php:65
+msgid "Options Updated"
+msgstr ""
+
+#: ../admin/admin-interface.php:68
+#: ../admin/admin-interface.php:98
+msgid "Options Reset"
+msgstr ""
+
+#: ../admin/admin-interface.php:71
+msgid "Error!"
+msgstr ""
+
+#: ../admin/admin-interface.php:78
+msgid "Warning- This options panel will not work properly without javascript!"
+msgstr ""
+
+#: ../admin/admin-interface.php:95
+msgid "Save All Changes"
+msgstr ""
+
+#: ../admin/admin-interface.php:279
+#: ../admin/admin-interface.php:284
+msgid "Uploading"
+msgstr ""
+
+#: ../admin/admin-interface.php:289
+#: ../admin/admin-interface.php:752
+msgid "Upload Image"
+msgstr ""
+
+#: ../admin/admin-interface.php:403
+msgid "Click OK to reset. All settings will be lost!"
+msgstr ""
+
+#: ../admin/admin-interface.php:450
+#, php-format
+msgid "Upload Error:  %s"
+msgstr ""
+
+#: ../admin/admin-interface.php:637
+msgid "Normal"
+msgstr ""
+
+#: ../admin/admin-interface.php:638
+msgid "Italic"
+msgstr ""
+
+#: ../admin/admin-interface.php:639
+msgid "Bold"
+msgstr ""
+
+#: ../admin/admin-interface.php:640
+msgid "Bold Italic"
+msgstr ""
+
+#: ../admin/admin-interface.php:663
+msgid "None"
+msgstr ""
+
+#: ../admin/admin-interface.php:664
+msgid "Solid"
+msgstr ""
+
+#: ../admin/admin-interface.php:665
+msgid "Dashed"
+msgstr ""
+
+#: ../admin/admin-interface.php:666
+msgid "Dotted"
+msgstr ""
+
+#: ../admin/admin-interface.php:754
+msgid "Remove"
+msgstr ""
+
+#: ../admin/admin-setup.php:44
+#, php-format
+msgid "This theme comes with an <a href=\"%s\">options panel</a> to configure settings. This theme also supports widgets, please visit the <a href=\"%s\">widgets settings page</a> to configure them."
+msgstr ""
+
+#: ../admin/options-framework.php:160
+#: ../admin/options-framework.php:359
+msgid "Theme Options"
+msgstr ""
+
+#: ../admin/options-framework.php:227
+msgid "Save Options"
+msgstr ""
+
+#: ../admin/options-framework.php:228
+msgid "Restore Defaults"
+msgstr ""
+
+#: ../admin/options-framework.php:228
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: ../admin/options-framework.php:260
+msgid "Default options restored."
+msgstr ""
+
+#: ../admin/options-framework.php:301
+msgid "Options saved."
+msgstr ""
+
+#: ../admin/options-medialibrary-uploader.php:26
+msgid "Options Framework Internal Container"
+msgstr ""
+
+#: ../admin/options-medialibrary-uploader.php:128
+msgid "Upload"
+msgstr ""
+
+#: ../admin/options-medialibrary-uploader.php:151
+msgid "View File"
+msgstr ""
+
+#: ../admin/options-medialibrary-uploader.php:288
+msgid "Gallery"
+msgstr ""
+
+#: ../admin/options-medialibrary-uploader.php:288
+msgid "Previously Uploaded"
+msgstr ""
+
+#: ../admin/options-sanitize.php:202
+msgid "No Repeat"
+msgstr ""
+
+#: ../admin/options-sanitize.php:203
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: ../admin/options-sanitize.php:204
+msgid "Repeat Vertically"
+msgstr ""
+
+#: ../admin/options-sanitize.php:205
+msgid "Repeat All"
+msgstr ""
+
+#: ../admin/options-sanitize.php:218
+msgid "Top Left"
+msgstr ""
+
+#: ../admin/options-sanitize.php:219
+msgid "Top Center"
+msgstr ""
+
+#: ../admin/options-sanitize.php:220
+msgid "Top Right"
+msgstr ""
+
+#: ../admin/options-sanitize.php:221
+msgid "Middle Left"
+msgstr ""
+
+#: ../admin/options-sanitize.php:222
+msgid "Middle Center"
+msgstr ""
+
+#: ../admin/options-sanitize.php:223
+msgid "Middle Right"
+msgstr ""
+
+#: ../admin/options-sanitize.php:224
+msgid "Bottom Left"
+msgstr ""
+
+#: ../admin/options-sanitize.php:225
+msgid "Bottom Center"
+msgstr ""
+
+#: ../admin/options-sanitize.php:226
+msgid "Bottom Right"
+msgstr ""
+
+#: ../admin/options-sanitize.php:239
+msgid "Scroll Normally"
+msgstr ""
+
+#: ../admin/options-sanitize.php:240
+msgid "Fixed in Place"
+msgstr ""
+
+#: ../admin/theme-options.php:13
+msgid "Select a category:"
+msgstr ""
+
+#: ../admin/theme-options.php:20
+msgid "Select a page:"
+msgstr ""
+
+#: ../admin/theme-options.php:48
+msgid "Select a number:"
+msgstr ""
+
+#: ../admin/theme-options.php:53
+#: ../inc/widgets.php:63
+msgid "Left"
+msgstr ""
+
+#: ../admin/theme-options.php:53
+#: ../inc/widgets.php:64
+msgid "Right"
+msgstr ""
+
+#: ../admin/theme-options.php:53
+msgid "Center"
+msgstr ""
+
+#: ../admin/theme-options.php:56
+msgid "The Image"
+msgstr ""
+
+#: ../admin/theme-options.php:56
+msgid "The Post"
+msgstr ""
+
+#: ../admin/theme-options.php:67
+msgid "General"
+msgstr ""
+
+#: ../admin/theme-options.php:70
+msgid "Custom Logo"
+msgstr ""
+
+#: ../admin/theme-options.php:71
+msgid "Upload a custom logo for your theme"
+msgstr ""
+
+#: ../admin/theme-options.php:76
+msgid "Custom Favicon"
+msgstr ""
+
+#: ../admin/theme-options.php:77
+msgid "Upload a 16x16 pixel image (.png or .gif) for your favicon."
+msgstr ""
+
+#: ../admin/theme-options.php:82
+msgid "Facebook Icon Link"
+msgstr ""
+
+#: ../admin/theme-options.php:83
+msgid "Link to Facebook (ex. http://facebook.com/your-account/). If you do not want an icon, delete this text and save all changes."
+msgstr ""
+
+#: ../admin/theme-options.php:88
+msgid "Twitter Icon Link"
+msgstr ""
+
+#: ../admin/theme-options.php:89
+msgid "Link to twitter (ex. http://twitter.com/your-account/). If you do not want an icon, delete this text and save all changes."
+msgstr ""
+
+#: ../admin/theme-options.php:94
+msgid "RSS Icon Link"
+msgstr ""
+
+#: ../admin/theme-options.php:95
+msgid "Link to RSS (ex. http://yoursite.com/feed/rss/). If you do not want an icon, delete this text and save all changes."
+msgstr ""
+
+#: ../admin/theme-options.php:100
+msgid "Home Page"
+msgstr ""
+
+#: ../admin/theme-options.php:103
+msgid "Home Page Content"
+msgstr ""
+
+#: ../admin/theme-options.php:104
+msgid "If you have chosen to display \"Latest Posts\" on your home page (in Settings > Reading > Your Latest Posts), then the content you enter here will be displayed at the top of your home page. If you have chosen to display a \"Static Page\" as your home page, then this field will be ignored."
+msgstr ""
+
+#: ../admin/theme-options.php:109
+msgid "Lower Footer"
+msgstr ""
+
+#: ../admin/theme-options.php:112
+msgid "Left Footer Text"
+msgstr ""
+
+#: ../admin/theme-options.php:113
+msgid "Left section of lower footer text."
+msgstr ""
+
+#: ../admin/theme-options.php:118
+msgid "Right Footer Text"
+msgstr ""
+
+#: ../admin/theme-options.php:119
+msgid "Right section of lower footer text."
+msgstr ""
+
+#: ../admin/theme-options.php:124
+msgid "Style"
+msgstr ""
+
+#: ../admin/theme-options.php:127
+msgid "Background Color"
+msgstr ""
+
+#: ../admin/theme-options.php:128
+msgid "Pick a background color for the theme."
+msgstr ""
+
+#: ../admin/theme-options.php:133
+msgid "Site Wrapper Color"
+msgstr ""
+
+#: ../admin/theme-options.php:134
+msgid "Pick a background color for site wrapper."
+msgstr ""
+
+#: ../admin/theme-options.php:139
+msgid "Primary Color"
+msgstr ""
+
+#: ../admin/theme-options.php:140
+msgid "Pick a primary color for the color scheme of the theme."
+msgstr ""
+
+#: ../admin/theme-options.php:145
+msgid "Accent Color (includes buttons)"
+msgstr ""
+
+#: ../admin/theme-options.php:146
+msgid "Pick an accent color for the color scheme of the theme (includes buttons)."
+msgstr ""
+
+#: ../admin/theme-options.php:151
+msgid "Button Hover Color"
+msgstr ""
+
+#: ../admin/theme-options.php:152
+msgid "Pick a hover (roll-over) color for buttons."
+msgstr ""
+
+#: ../admin/theme-options.php:157
+msgid "Link Color"
+msgstr ""
+
+#: ../admin/theme-options.php:158
+msgid "Pick a color for the links (anchors) of the theme."
+msgstr ""
+
+#: ../admin/theme-options.php:163
+msgid "Link Hover Color"
+msgstr ""
+
+#: ../admin/theme-options.php:164
+msgid "Pick a hover (roll-over) color for links."
+msgstr ""
+
+#: ../admin/theme-options.php:169
+msgid "Main Nav Color"
+msgstr ""
+
+#: ../admin/theme-options.php:170
+msgid "Pick a color for the main navigation of the theme."
+msgstr ""
+
+#: ../admin/theme-options.php:175
+msgid "Main Nav Hover"
+msgstr ""
+
+#: ../admin/theme-options.php:176
+msgid "Pick a hover (roll-over) color for the main navigation of the theme."
+msgstr ""
+
+#: ../admin/theme-options.php:181
+msgid "Main Borders"
+msgstr ""
+
+#: ../admin/theme-options.php:182
+msgid "Style the heavy borders above and below the content."
+msgstr ""
+
+#: ../admin/theme-options.php:187
+msgid "Content Borders"
+msgstr ""
+
+#: ../admin/theme-options.php:188
+msgid "Style the borders that separate sections of content."
+msgstr ""
+
+#: ../admin/theme-options.php:193
+msgid "Heading Font"
+msgstr ""
+
+#: ../admin/theme-options.php:194
+msgid "Specify the Heading font properties"
+msgstr ""
+
+#: ../admin/theme-options.php:200
+msgid "Body Font"
+msgstr ""
+
+#: ../admin/theme-options.php:201
+msgid "Specify the body font properties"
+msgstr ""
+
+#: ../admin/theme-options.php:207
+msgid "Analytics"
+msgstr ""
+
+#: ../admin/theme-options.php:210
+msgid "Google Analytics"
+msgstr ""
+
+#: ../admin/theme-options.php:211
+msgid "Paste your Google Analytics (or other) tracking code here. This will be added before the closing head tag but not displayed to the public."
+msgstr ""
+
+#: ../inc/meta.php:2
+#, php-format
+msgid "<em>Posted on:</em> <span class=\"primary-color-text\">%s</span> <em>by</em> <span class=\"primary-color-text\">%s</span>"
+msgstr ""
+
+#: ../inc/meta.php:3
+msgid "No Comments"
+msgstr ""
+
+#: ../inc/meta.php:4
+msgid "1 Comment"
+msgstr ""
+
+#: ../inc/meta.php:5
+msgid "% Comments"
+msgstr ""
+
+#: ../inc/nav.php:2
+msgid "Older Entries"
+msgstr ""
+
+#: ../inc/nav.php:3
+msgid "Newer Entries"
+msgstr ""
+
+#: ../inc/no-menu.php:3
+msgid "Create Your Main Menu"
+msgstr ""
+
+#: ../inc/pagination.php:14
+msgid "Prev"
+msgstr ""
+
+#: ../inc/pagination.php:15
+msgid "Next"
+msgstr ""
+
+#: ../inc/sidebar-page.php:4
+msgid "Page Sidebar Widget Area"
+msgstr ""
+
+#: ../inc/sidebar-page.php:6
+msgid "You can add page sidebar widgets to this area from the WordPress admin in \"Page Sidebar Widgets.\""
+msgstr ""
+
+#: ../inc/sidebar-post.php:4
+msgid "Post Sidebar Widget Area"
+msgstr ""
+
+#: ../inc/sidebar-post.php:6
+msgid "You can add post sidebar widgets to this area from the WordPress admin in \"Post Sidebar Widgets.\""
+msgstr ""
+
+#: ../inc/widgets.php:7
+#: ../inc/widgets.php:182
+msgid "Custom text box that displays an image."
+msgstr ""
+
+#: ../inc/widgets.php:8
+msgid "Picture Widget"
+msgstr ""
+
+#: ../inc/widgets.php:52
+#: ../inc/widgets.php:153
+#: ../inc/widgets.php:252
+msgid "Title:"
+msgstr ""
+
+#: ../inc/widgets.php:57
+msgid "Image Path (URL):"
+msgstr ""
+
+#: ../inc/widgets.php:62
+msgid "Float Image:"
+msgstr ""
+
+#: ../inc/widgets.php:67
+msgid "Text:"
+msgstr ""
+
+#: ../inc/widgets.php:68
+msgid "HTML wrapped in paragraph tags."
+msgstr ""
+
+#: ../inc/widgets.php:79
+msgid "Display recent posts."
+msgstr ""
+
+#: ../inc/widgets.php:80
+msgid "Recent Posts Widget"
+msgstr ""
+
+#: ../inc/widgets.php:86
+#: ../inc/widgets.php:142
+msgid "Recent Posts"
+msgstr ""
+
+#: ../inc/widgets.php:157
+msgid "Category"
+msgstr ""
+
+#: ../inc/widgets.php:159
+msgid "All"
+msgstr ""
+
+#: ../inc/widgets.php:167
+msgid "Number of posts:"
+msgstr ""
+
+#: ../inc/widgets.php:170
+msgid "at most 10"
+msgstr ""
+
+#: ../inc/widgets.php:183
+msgid "Flickr Widget"
+msgstr ""
+
+#: ../inc/widgets.php:257
+msgid "Feed URL:"
+msgstr ""
+
+#: ../inc/widgets.php:262
+msgid "Pictures to Show:"
+msgstr ""
+
+#: ../inc/widgets.php:268
+msgid "Note"
+msgstr ""
+
+#: ../inc/widgets.php:268
+msgid "Your RSS feed link should be at the bottom of your Flickr homepage (look for the orange RSS icon)."
+msgstr ""
+

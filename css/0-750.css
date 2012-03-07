@@ -1,0 +1,220 @@
+/*==========================================
+ globals
+ ==========================================*/
+ 
+body { font-size:13px; }
+
+h1 { font-size:26px; }
+h2, h2 a { font-size:20px; padding-bottom:5px; }
+h3 { font-size:20px; }
+h4 { font-size:18px; }
+h5 { font-size:16px; }
+h6 { font-size:14px; }
+
+/*==========================================
+ layout / general content
+ ==========================================*/
+ 
+ #site-wrapper { max-width:340px; }
+ 
+#header, #content, #upper-footer, #lower-footer
+{ 
+	margin: 0 auto;
+	padding: 0;
+	width: 300px;
+}
+
+/* 2 column layout */
+#content  #tf-left-column
+{
+	width: 300px;
+	height: auto;
+	padding: 30px 0;
+	margin: 0;
+	float: none;
+	border-right: none;
+	border-bottom-width: 1px;
+}
+
+#content  #tf-right-column
+{
+	width: 300px;
+	height: auto;
+	float: none;
+	margin: 0;
+	padding: 30px 0 0 0;
+	border: none;
+}
+
+#content .layout-container { padding:30px 0; }
+
+#content .content-container { padding-right:0; padding-left:0; }
+
+/*==========================================
+ header
+ ==========================================*/
+
+#header
+{
+	padding-top: 34px;
+	padding-bottom: 75px;
+	border-bottom-width: 1px;
+}
+
+#header a#logo { width:200px; margin-bottom:30px; }
+
+/*==========================================
+ persistent search
+==========================================*/
+
+#persistent-search { bottom:25px; top: auto; width:200px; }
+
+/*==========================================
+ navigations
+ ==========================================*/
+ 
+/* see themefit.mobilemenu.css */ 
+#main-nav { border-top:none; padding-bottom:25px; }
+
+#main-nav #main-nav-container { width:300px; }
+
+/* icon menu */
+ul#icon-menu { left:0; bottom:27px; }
+
+/*==========================================
+ page title
+==========================================*/
+
+#tf-page-title { padding:20px 0; border-bottom-width:5px; }
+
+#tf-page-title.greeting-title { padding:25px 0; }
+
+#tf-page-title.greeting-title h1 { font-size:25px; }
+
+/*==========================================
+  sidebar widgets
+ ==========================================*/
+ 
+ul.sidebar li.sidebar-widget-item h5 { font-size:18px; padding-bottom: 10px;}
+
+ul.sidebar li.sidebar-widget-item { width:300px; padding-left:0; }
+
+/* sidebar shortcode button */
+ul.sidebar a.tf-button
+{
+	padding: 7px 10px;
+	margin-top: 20px;
+}
+
+ul.sidebar a.tf-button span { font-size:13px; }
+
+/*==========================================
+  posts
+ ==========================================*/
+
+div.post,
+div.page
+{
+	margin-top: 25px; 
+	padding-top: 25px; 
+}
+
+div.post h2, div.post h2 a { padding-bottom:5px; }
+
+input[type="textarea"] { max-width:280px }
+
+div#respond #commentform input[type="text"] { width:65%; }
+div#respond #commentform #comment { width:90%; }
+
+ol#comment-list li.comment-list-item div.comment .avatar { width:40px; }
+
+ol#comment-list li.comment-list-item div.comment div.comment-body { padding: 0 0 0 50px; }
+
+ol#comment-list li.comment-list-item ul.children { padding: 2em 0 0 1em; }
+
+
+/*==========================================
+ show / hide (toggle)
+==========================================*/
+
+.showhide div.persistent-content
+{
+	width: 240px;
+	min-height: 60px;
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: top;
+}
+
+.showhide a.toggle-button
+{
+	display: inline-block;
+	width: 50px;
+	height: 60px;
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+	background-image: url('../images/menuarrow.png');
+	background-repeat: no-repeat;
+	background-position: 17px 25px;
+}
+
+html.ie7 .showhide div.persistent-content { margin-right:10px; }
+
+html.ie7 .showhide div.persistent-content,
+html.ie7 .showhide a.toggle-button
+{
+	display: inline;
+	zoom: 1;
+}
+
+.showhide a.toggle-button:hover { }
+
+.showhide a.toggle-button.open { background-position:17px -25px; }
+
+.showhide div.toggle-content { /*height:0;*/ width:300px; overflow:hidden; position:relative; }
+
+/*==========================================
+  footers
+===========================================*/
+ 
+/* upper footer */
+#upper-footer { overflow:hidden; padding-bottom:34px; }
+
+/*==========================================
+  widgets (footer)
+===========================================*/
+
+#upper-footer ul#footer-widgets
+{
+	letter-spacing: -4px;
+	word-spacing: -4px;
+	width: 100%;
+	margin: 0;
+}
+
+#upper-footer ul#footer-widgets li.footer-widget-item
+{
+	width: 100%;
+	float: none;
+	margin: 30px 0 0 0;
+	padding: 30px 0 0 0;
+	border-top-width: 1px;
+}
+
+#upper-footer ul#footer-widgets li.footer-widget-item.tf-first-child
+{
+	padding: 0;
+	border: none;
+}
+
+/* force left alignment on text for user readabiliity */
+#upper-footer ul#footer-widgets li.footer-widget-item .textwidget p { text-align: left; }
+
+#more-left-column {
+
+	visibility:hidden;
+	width: 0;
+	height: 0;
+	
+}

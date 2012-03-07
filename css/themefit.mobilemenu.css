@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+/********************************************************************************
+
+This is the ThemeFit mobile menu core css. We do not recommend 
+modifying the css in this file. To cusomize the mobile menu, 
+edit themefit.mobilemenu.customize.css
+
+*********************************************************************************/
+
+/*==========================================
+ menu wrapper, menu container, menu
+==========================================*/
+
+/* menu wrapper */
+#main-nav.tf-mobile-menu
+{
+	position: relative;
+	margin: 0;
+}
+
+/* menu container (div to be animated) */
+#main-nav.tf-mobile-menu #main-nav-container 
+{ 
+	margin: 0;
+	padding: 0;
+}
+
+/* menu */
+#main-nav.tf-mobile-menu #main-nav-container ul.menu 
+{
+	position: relative;
+	display: block;
+	margin: 0 6px;
+	padding: 0 0 47px 0;
+	overflow: hidden;
+	z-index: 9997;
+	border: 1px solid #CCC;
+	border-top: none;
+	/* rounded corners */
+	-moz-border-radius-bottomleft: 10px; /* mozilla */
+	-moz-border-radius-bottomright: 10px;
+	-webkit-border-bottom-left-radius: 10px; /* safari */
+	-webkit-border-bottom-right-radius: 10px;
+	border-bottom-right-radius: 10px;  /* default */
+	border-bottom-left-radius: 10px;
+}
+
+/*==========================================
+ menu items 
+==========================================*/
+
+#main-nav.tf-mobile-menu #main-nav-container ul.menu li.menu-item
+{
+	float: none;
+	width: 256px;
+	padding: 12px 15px;
+	margin: 0;
+	font-weight: 400;
+	border-bottom: 1px solid #CCC;
+	text-align: left;
+}
+
+/* ensure sub menus do not trigger top level anchor hovers */
+#main-nav.tf-mobile-menu #main-nav-container ul.menu li.menu-item:hover a { background:none; }
+
+#main-nav.tf-mobile-menu #main-nav-container ul.menu li.menu-item.tf-last-child
+{
+	border: none;
+	padding-bottom: none;
+}
+
+#main-nav.tf-mobile-menu #main-nav-container ul.menu li.menu-item a
+{
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	display: block;
+	height: auto;
+	max-width: 256px;
+	overflow: visible;
+}
+
+/* main nav sub menus */
+#main-nav.tf-mobile-menu #main-nav-container ul.menu li.menu-item ul.sub-menu
+{
+	display: block;
+	position: relative;
+	left: 15px;
+	top: auto;
+	padding: 0;
+	background: none;
+	margin: 0;
+	border: none;
+	width: auto;
+}
+
+/* main nav sub menu items*/
+#main-nav.tf-mobile-menu #main-nav-container ul.menu li.menu-item ul.sub-menu li.menu-item
+{
+	width: 240px;
+	background: none;
+	margin: 2px 0;
+	cursor: auto;
+	border: none;
+}
+
+#main-nav.tf-mobile-menu #main-nav-container ul.menu li.menu-item ul.sub-menu li.menu-item.tf-first-child { padding-top: 8px; }
+
+#main-nav.tf-mobile-menu #main-nav-container ul.menu li.menu-item ul.sub-menu li.menu-item a
+{
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	border: none;
+	padding: 7px 0;
+}
+
+#main-nav.tf-mobile-menu #main-nav-container ul.menu li.menu-item ul.sub-menu li a:hover { }
+
+/*==========================================
+ menu controls
+==========================================*/
+
+/* toggle button */
+#main-nav.tf-mobile-menu a#toggle-menu 
+{ 
+	position: relative;
+	display: block;
+	height: 18px;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: 400;
+	padding: 12px 0 12px 20px;
+	margin: 0;
+	width: 280px;
+	text-decoration: none;
+	z-index: 9999;
+	/* rounded corners */
+	-moz-border-radius: 5px; /* mozilla */
+	-webkit-border-radius: 5px; /* safari */
+	border-radius: 5px; /* default */
+}
+
+/* button arrow */
+#main-nav.tf-mobile-menu a#toggle-menu span
+{ 
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 42px;
+	width: 60px;
+	background-image: url("../images/menuarrow.png");
+	background-repeat: no-repeat;
+	background-position: 22px 15px;
+	overflow: hidden;
+	/* rounded corners */
+	-moz-border-radius-bottomright: 5px; /* mozilla */
+	-moz-border-radius-topright: 5px;
+	-webkit-border-bottom-right-radius: 5px;	 /* safari */
+	-webkit-border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px; 	/* default */
+	border-top-right-radius: 5px;
+}
+
+/* close button */
+#main-nav.tf-mobile-menu a#close-menu
+{
+	display:block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 0;
+	margin: 0 6px 0 0;
+	width: 47px;
+	height: 40px;
+	background-image: url("../images/menuclose.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 9998;
+	/* rounded corners */
+	-moz-border-radius: 10px 0; /* mozilla */
+	-webkit-border-radius: 10px 0; /* safari */
+	border-radius: 10px 0; /* default */
+}
+
+#main-nav.tf-mobile-menu.open a#toggle-menu.button-down span { background-position:22px -33px; }
+
+/****************************************************************************
+
+Customize the ThemeFit mobile menu styles here.
+
+****************************************************************************/
+
+/*======================================
+ menu wrapper, menu container, menu
+======================================*/
+
+#main-nav.tf-mobile-menu #main-nav-container ul.menu { background-color: #F5F5F5; border-color: #CCC; }
+
+#main-nav.tf-mobile-menu #main-nav-container ul.menu li.menu-item { border-color: #CCC; }
+
+#main-nav.tf-mobile-menu #main-nav-container ul.menu li.menu-item a{ }
+
+#main-nav.tf-mobile-menu #main-nav-container ul.menu li.menu-item ul.sub-menu li.menu-item a { }
+
+#main-nav.tf-mobile-menu #main-nav-container ul.menu li.menu-item ul.sub-menu li.menu-item a:hover { }
+
+/* default menu list item - user has not made menu yet */
+#main-nav.tf-mobile-menu #main-nav-container ul.menu li.menu-item#no-menu-items a { padding: 7px 10px; }
+#main-nav.tf-mobile-menu #main-nav-container ul.menu li.menu-item#no-menu-items { margin-top: 5px; }
+
+/*======================================
+ menu controls
+======================================*/
+
+/* toggle button (main bar color and font color) */
+#main-nav.tf-mobile-menu a#toggle-menu { color: #FFF; }
+
+/* toggle button (portion of button which contains arrow) */
+#main-nav.tf-mobile-menu a#toggle-menu span { }
+
+/* close button */
+#main-nav.tf-mobile-menu a#close-menu { bottom:26px; /* move button up to counter act #main-nav padding*/ }
+
+/* both buttons :hover */
+#main-nav.tf-mobile-menu a#toggle-menu:hover span, /* toggle button */
+#main-nav.tf-mobile-menu a#close-menu:hover /* close button */
+{ }

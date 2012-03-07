@@ -1,0 +1,18 @@
+/*
+Theme Name: Broadside-Hybrid
+Theme URI: http://aramzs.me
+Description: ThemeFit Hybrid child theme for George Mason University's student newspaper Broadside.
+Author: Aram Zucker-Scharff
+Author URI: http://aramzs.me
+Template: themefit-hybrid
+Version: 0.3
+Tags: 
+.
+Created for Broadside newspaper at George Mason University.
+.
+*/
+/*Reset browser defaults */
+@import url('../themefit-hybrid/style.css');
+
+/*Prepare theme for retheming*/
+@import url('user.css');
