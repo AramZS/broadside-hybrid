@@ -1,20 +1,30 @@
 #tf-right-column {
 
-	width: 350px;
+	width: 326px;
 
 }
 
 #tf-left-column {
 
-	width: 458px;
+	width: 482px;
+	margin-left:-1px;
+	border-left-width: 1px;
+	padding-left: 30px;
 	
 }
 
 #more-left-column {
 
 	width: 150px;
+	height: auto;
 	border-right: 1px solid #999;
 	float:left;
 	height: auto;
 	
+}
+
+#tf-left-column .hentry {
+
+	padding-left: 30px;
+
 }

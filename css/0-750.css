@@ -218,3 +218,15 @@ html.ie7 .showhide a.toggle-button
 	height: 0;
 	
 }
+
+#tf-left-column .hentry {
+
+	padding-left: 0px;
+
+}
+
+#tf-left-column {
+
+	border-left-width: 0px;
+	
+}

@@ -151,3 +151,15 @@ ul.sidebar li.sidebar-widget-item h5 { padding-bottom: 10px; }
 	width: 249px;
 	height: auto;
 }
+
+#tf-left-column .hentry {
+
+	padding-left: 0px;
+
+}
+
+#tf-left-column {
+
+	border-left-width: 0px;
+	
+}
