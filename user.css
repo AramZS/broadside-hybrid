@@ -55,6 +55,22 @@ a: hover {
 	border-right: 1px solid #999;
 	float:left;
 	height: auto;
+	padding-top: 12px!important;
+	font-size: 12px;
+	
+}
+
+#left-cats {
+
+	margin-right: 20px;
+	
+}
+
+.left-cat-box ul {
+
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 	
 }
 
@@ -197,7 +213,7 @@ div.post .entry, div.page .entry {
 	
 }
 
-#tf-right-column .sidebar h5 {
+#tf-right-column .sidebar h5, #left-cats .left-cat-title h5 {
 
 	font-weight: bold;
 	font-size: 14px;
@@ -223,6 +239,7 @@ div.post .entry, div.page .entry {
 #tf-right-column .widget_rss a {
 
 	color:black;
+	font-style: normal;
 	
 }
 

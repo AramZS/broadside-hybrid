@@ -12,7 +12,7 @@ foreach ($exploded_left_cats as $value) {
 	?>
 		<div class="left-cat-box">
 			<div class="left-cat-title">
-				<?php echo get_the_category_by_ID($value); ?>
+				<h5><?php echo get_the_category_by_ID($value); ?></h5>
 			</div>
 	<?php
 	
