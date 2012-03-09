@@ -30,7 +30,8 @@ foreach ($exploded_left_cats as $value) {
 		</div><?php
 					
 	
-	
+	wp_reset_postdata();
+	wp_reset_query();
 
 } //end foreach
 ?></div><?php
