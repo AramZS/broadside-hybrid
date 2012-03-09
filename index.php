@@ -15,8 +15,8 @@
 				<div class="showhide">
 				
 					<div class="persistent-content">
+						<?php include (STYLESHEETPATH . '/inc/meta.php' ); ?>
 						<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-						<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 					</div>
 					
 					<a class="toggle-button accent-color-background"></a>
@@ -26,7 +26,7 @@
 					
 					<div class="toggle-content">
 						<div class="entry">
-							<?php the_content(); ?>
+							<?php the_excerpt(); ?>
 						</div>
 					</div>
 				

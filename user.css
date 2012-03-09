@@ -1,3 +1,31 @@
+body {
+
+	border-top: #FFD524 3px solid;
+	font-family: Verdana, Tahoma, 'DejaVu Sans', sans-serif;
+	color: black;
+		
+}
+
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, a h1, a h2, a h3, a h4, a h5, a h6 {
+
+	color:black;
+	font-family: Verdana, Tahoma, 'DejaVu Sans', sans-serif;
+
+}
+
+a {
+
+	text-decoration: none;
+	color: #00ACFF;
+	
+}
+
+a: hover {
+
+	text-decoration: underline;
+	
+}
+
 #tf-right-column {
 
 	width: 326px;
@@ -27,4 +55,102 @@
 
 	padding-left: 30px;
 
+}
+
+#header {
+
+	padding-top: 20px;
+	
+}
+
+#main-nav {
+
+	border-top-width: 0;
+	margin-top: 2px;
+}
+
+#main-nav #main-nav-container ul.menu li.menu-item {
+
+	background: transparent;
+	
+}
+
+#main-nav-container .menu a {
+
+	background: transparent;
+	font-size: 16px;
+	border-bottom: transparent 3px solid;
+	font-family: Verdana, Tahoma, 'DejaVu Sans', sans-serif;
+	
+}
+
+#main-nav #main-nav-container ul.menu li.menu-item a {
+
+	font-size: 16px;
+	background: transparent!important;
+
+}
+
+#main-nav #main-nav-container ul.menu li.menu-item a:hover {
+
+	background: transparent;
+
+}
+
+#main-nav-container .menu a:hover {
+
+	border-bottom: #FFD524 3px solid;
+	background: transparent;
+	padding: 5px;
+	
+}
+
+#main-nav-container .menu a span {
+
+	color: black;
+	background: transparent;
+	
+}
+
+.persistent-content h2 {
+
+	margin-top: -14px;
+	
+}
+
+.persistent-content h2 a {
+
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 18px;
+	color: black!important;
+	cursor: auto;
+	font-family: Verdana, Tahoma, 'DejaVu Sans', sans-serif;
+
+}
+
+.persistent-content h2 a:hover {
+
+	text-decoration: underline;
+
+}
+
+.meta a {
+
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-family: Verdana, Tahoma, 'DejaVu Sans', sans-serif;
+	font-weight: bold;
+	cursor: auto;
+	color: #666;
+	
+}
+
+.meta a:hover {
+
+	cursor: auto;
+	color: #666;
+	text-decoration: none;
+	
 }
