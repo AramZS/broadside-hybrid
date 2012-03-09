@@ -12,6 +12,12 @@ array(   "name" => "Left Sidebar Category Previews",
         "id" => $shortname."_left_cats",
         "std" => "",
         "type" => "text"),
+		
+array(   "name" => "Featured Category",
+        "desc" => "Enter the category ID(s) you'd like the site to select from when generating the black-box top story. You can get them by mousing over the categories in the Category screen. Comma seperated, no spaces.",
+        "id" => $shortname."_featured_cats",
+        "std" => "",
+        "type" => "text"),
 
 array(    "type" => "close")
 
