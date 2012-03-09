@@ -255,3 +255,12 @@ div.post .entry, div.page .entry {
 	margin-left: 30px;
 	
 }
+
+.featured-box .hentry {
+
+	padding: 6px;
+	margin: 0 30px;
+	background-color: black;
+	color: white;
+
+}

@@ -8,6 +8,8 @@
 	</div>
 	<div id="tf-left-column" class="border-styles layout-container">
 	
+		<?php include ('featuredstory.php'); ?>
+	
 		<?php while (have_posts()) : the_post(); ?>
 		
 			<div <?php post_class('content-container border-styles'); ?>>
