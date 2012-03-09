@@ -14,7 +14,7 @@ array(   "name" => "Left Sidebar Category Previews",
         "type" => "text"),
 		
 array(   "name" => "Featured Category",
-        "desc" => "Enter the category ID(s) you'd like the site to select from when generating the black-box top story. You can get them by mousing over the categories in the Category screen. Comma seperated, no spaces.",
+        "desc" => "Enter the category ID you'd like the site to select from when generating the black-box top story. You can get it by mousing over the category in the Category screen. Only one ID.",
         "id" => $shortname."_featured_cats",
         "std" => "",
         "type" => "text"),
