@@ -6,6 +6,12 @@ body {
 		
 }
 
+p {
+
+	font-size: 12px;
+
+}
+
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, a h1, a h2, a h3, a h4, a h5, a h6 {
 
 	color:black;
@@ -87,7 +93,7 @@ a: hover {
 #main-nav #main-nav-container ul.menu li.menu-item a {
 
 	font-size: 16px;
-	background: transparent!important;
+	background: transparent;
 
 }
 
@@ -112,17 +118,26 @@ a: hover {
 	
 }
 
+div.post, div.page {
+
+	border-top-width: 0;
+	padding-top: 14px;
+	margin-top: 14px;
+
+}
+
 .persistent-content h2 {
 
-	margin-top: -14px;
+	padding-bottom: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 18px;
 	
 }
 
 .persistent-content h2 a {
 
-	font-size: 18px;
-	font-weight: bold;
-	line-height: 18px;
+
 	color: black!important;
 	cursor: auto;
 	font-family: Verdana, Tahoma, 'DejaVu Sans', sans-serif;
@@ -152,5 +167,73 @@ a: hover {
 	cursor: auto;
 	color: #666;
 	text-decoration: none;
+	
+}
+
+.meta {
+
+	color: #666;
+
+}
+
+div.post .entry, div.page .entry {
+
+	margin-top: 0;
+
+}
+
+#tf-right-column.layout-container {
+
+	padding-top: 12px;
+	
+}
+
+#tf-right-column .content-container {
+
+	margin-left: 12px;
+	padding-bottom: 12px;
+	padding-left: 0px;
+	
+}
+
+#tf-right-column .sidebar h5 {
+
+	font-weight: bold;
+	font-size: 14px;
+	padding-bottom: 2px;
+	
+}
+
+#tf-right-column .widget_rss h5 {
+
+	padding-bottom: 6px;
+	
+}
+
+#tf-right-column .widget_rss h5 img {
+
+	border:0;
+	width:0;
+	height: 0;
+	margin-left: -5px;
+	
+}
+
+#tf-right-column .widget_rss a {
+
+	color:black;
+	
+}
+
+#tf-right-column .widget_rss ul li {
+
+	border-top: 0;
+	padding: 5px 0;
+	
+}
+
+.pagination {
+
+	margin-left: 30px;
 	
 }
