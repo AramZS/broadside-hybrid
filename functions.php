@@ -1,5 +1,9 @@
 <?php
 
+include ('options/options.php');
+
+
+
 function zs_killer_excerpt( $text ) {
 	global $post;
 	if ( '' == $text ) {
@@ -21,7 +25,4 @@ return $text;
 
 remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 add_filter('get_the_excerpt', 'zs_killer_excerpt');
-
-include ('options/options.php');
-
 ?>

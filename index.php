@@ -3,7 +3,7 @@
 <?php if (have_posts()) : ?>
 	<div id="more-left-column" class="border-styles layout-container">
 	
-		Stuff
+		<?php include ('sidebar-left.php'); ?>
 	
 	</div>
 	<div id="tf-left-column" class="border-styles layout-container">
