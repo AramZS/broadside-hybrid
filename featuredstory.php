@@ -18,17 +18,17 @@ if ( is_home() ) {
 		
 		<div <?php post_class('content-container border-styles'); ?>>
 		
-			<?php
-				//A call to the featured image
-				//Will go here as soon as I make a featured image. 
-			?>	
+				<div class="photo-frame"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" alt="<?php the_title_attribute(); ?>" >
+					<?php the_post_thumbnail( 'main-thumb' ); ?>
+				</a></div>
+					
 				<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
 				<div class="entry">
 					<?php the_excerpt(); ?>
 				</div>
 				
 				<div class="read-more-link">
-					<a href="<?php get_permalink($post->ID)?>">Read more...</a>
+					<a href="<?php echo get_permalink($post->ID);?>">Read more...</a>
 				</div>
 			
 		</div>

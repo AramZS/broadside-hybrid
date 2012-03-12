@@ -12,7 +12,7 @@ function zs_killer_excerpt( $text ) {
 		$text = str_replace('\]\]\>', ']]&gt;', $text);
 		$text = preg_replace('@<script[^>]*?>.*?</script>@si', '', $text);
 		$text = strip_tags($text, '<p> <strong> <bold> <i> <em> <emphasis> <del> <h1> <h2> <h3> <h4> <h5> <img>');
-		$excerpt_length = 200; //200 words for some reason... would prefer a char count. Not sure how to do it. 
+		$excerpt_length = 50; //200 words for some reason... would prefer a char count. Not sure how to do it. 
 		$words = explode(' ', $text, $excerpt_length + 1);
 		if (count($words)> $excerpt_length) {
 		  array_pop($words);
@@ -25,4 +25,12 @@ return $text;
 
 remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 add_filter('get_the_excerpt', 'zs_killer_excerpt');
+
+if ( function_exists( 'add_theme_support' ) ) {
+	add_theme_support( 'post-thumbnails' );
+    set_post_thumbnail_size( 200, 200 ); // default Post Thumbnail dimensions   
+}
+if ( function_exists( 'add_image_size' ) ) { 
+	add_image_size( 'main-thumb', 458, 310, true ); //(hard cropped)}
+}
 ?>
