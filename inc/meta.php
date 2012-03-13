@@ -6,6 +6,7 @@
 	}
 	$c = 0;
 	$catcount = count(get_the_category());
+	echo '<div class="meta-cat">';
 	foreach((get_the_category()) as $category) {
 	$c++;
     if ($category->cat_name != $bh_featured_cats) {
@@ -13,10 +14,14 @@
 	
 	} if ($catcount > 1 && $c < $catcount){ echo ", ";} else { echo " "; }
 	}
+	echo '</div>';
 	
-	echo " / "; echo get_the_time('M. j, Y'); ?>
+	echo '<div class="meta-slash"> / </div><div class="meta-time">'; echo get_the_time('M. j, Y'); echo '</div><div class="meta-author">'; ?>
     <?php comments_popup_link(	__('No Comments', 'domain-themefit-hybrid'), 
 								__('1 Comment', 'domain-themefit-hybrid'), 
 								__('% Comments', 'domain-themefit-hybrid'),
-								'comments-link', ''); ?>
+								'comments-link', ''); 
+	echo '</div>';							
+								?>
+	
 </div>

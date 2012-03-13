@@ -211,6 +211,21 @@ html.ie7 .showhide a.toggle-button
 /* force left alignment on text for user readabiliity */
 #upper-footer ul#footer-widgets li.footer-widget-item .textwidget p { text-align: left; }
 
+/** More styling **/
+
+#content {
+
+	border-right: 0;
+	border-left: 0;
+	
+}
+
+div.post, div.page {
+
+	border-top-width: 1px;
+
+}
+
 #more-left-column {
 
 	visibility:hidden;
@@ -219,16 +234,70 @@ html.ie7 .showhide a.toggle-button
 	
 }
 
+#tf-left-column {
+
+	padding-top: 16px;
+	border-left-width: 0px;
+
+}
+
 #tf-left-column .hentry {
 
 	padding-left: 0px;
 
 }
 
-#tf-left-column {
+#tf-left-column .featured-box .hentry {
 
-	border-left-width: 0px;
+	margin: 0;
+
+}
+
+#tf-left-column .featured-box .hentry .photo-frame {
+
+	width: 300px;
 	
+}
+
+#tf-left-column .featured-box .hentry .photo-frame img {
+
+	margin-top: -26px;
+	
+}
+
+.meta .meta-cat, .meta .meta-slash {
+
+	visibility: hidden;
+	height: 0;
+	width: 0;
+	display: block
+
+}
+
+.twofifty .responsive-container iframe, .twofifty .responsive-container object {
+
+	-moz-transform: scale(0.95);
+	-moz-transform-origin: 0 0;
+	-o-transform: scale(0.95);
+	-o-transform-origin: 0 0;
+	-webkit-transform: scale(0.95);
+	-webkit-transform-origin: 0 0;
+	width: 300px;
+	height: 250px;
+
+}
+
+.foursixtyeight .responsive-container iframe, .foursixtyeight .responsive-container object{
+
+	-moz-transform: scale(0.64);
+	-moz-transform-origin: 0 0;
+	-o-transform: scale(0.64);
+	-o-transform-origin: 0 0;
+	-webkit-transform: scale(0.64);
+	-webkit-transform-origin: 0 0;
+	width: 468px;
+	height: 65px;
+
 }
 
 .social-buttons-fb-large {

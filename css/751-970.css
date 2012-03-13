@@ -138,6 +138,27 @@ ul.sidebar li.sidebar-widget-item h5 { padding-bottom: 10px; }
 	margin-bottom: 34px;
 }
 
+/** Additions **/
+
+#main-nav {
+
+	margin-top: 12px;
+	
+}
+
+
+#main-nav #main-nav-container ul.menu li.menu-item a {
+
+	font-style: bold;
+	
+}
+
+#content {
+
+	border: 0;
+
+}
+
 #more-left-column {
 
 	visibility:hidden;
@@ -152,6 +173,21 @@ ul.sidebar li.sidebar-widget-item h5 { padding-bottom: 10px; }
 	height: auto;
 }
 
+#tf-right-column .content-container {
+
+	margin-left: 0;
+	padding-bottom: 25px;
+	padding-left: 25px;
+	margin-right: 0;
+	padding-right: 0;
+	padding-top: 0;
+
+}
+
+ul.sidebar li.sidebar-widget-item {
+border-top-width: 1px;
+}
+
 #tf-left-column .hentry {
 
 	padding-left: 0px;
@@ -161,11 +197,55 @@ ul.sidebar li.sidebar-widget-item h5 { padding-bottom: 10px; }
 #tf-left-column {
 
 	border-left-width: 0px;
+	margin-left: 0;
 	
 }
 
-.photo-frame {
+#tf-left-column .featured-box .hentry {
 
-	width:441px;
+	margin: 0 25px 0 0;
+	
+}
+
+#tf-left-column .featured-box .hentry .photo-frame {
+
+	width:440px;
+
+}
+
+.hentry h2 {
+
+	padding-top: 10px;
+	
+}
+
+#upper-footer ul#footer-widgets li.footer-widget-item  {
+
+	width: auto;
+	
+}
+
+ul#footer-widgets li.footer-widget-item .responsive-container {
+
+	padding-bottom: 4.50%;
+
+}
+
+.twofifty .responsive-container {
+
+	padding-bottom: 65%;
+	
+}
+
+.twofifty .responsive-container iframe, .twofifty .responsive-container object {
+
+	-moz-transform: scale(0.75);
+	-moz-transform-origin: 0 0;
+	-o-transform: scale(0.75);
+	-o-transform-origin: 0 0;
+	-webkit-transform: scale(0.75);
+	-webkit-transform-origin: 0 0;
+	width: 300px;
+	height: 250px;
 
 }

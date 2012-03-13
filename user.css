@@ -232,6 +232,12 @@ div.post .meta, div.page .meta {
 
 }
 
+.meta div {
+
+	display:inline;
+
+}
+
 div.post .entry, div.page .entry {
 
 	margin-top: 0;
