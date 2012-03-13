@@ -226,11 +226,20 @@ div.post, div.page {
 
 }
 
+#main-nav-container .menu a:hover {
+
+	border-bottom: transparent 3px solid;
+	background: transparent;
+	padding: 5px;
+	
+}
+
 #more-left-column {
 
 	visibility:hidden;
 	width: 0;
 	height: 0;
+	border: 0;
 	
 }
 
@@ -300,18 +309,23 @@ div.post, div.page {
 
 }
 
-.social-buttons-fb-large {
+.social-button-fb-large {
 
-	visibility:hidden;
+	visibility: hidden;
 	height: 0;
 	width: 0;
 
 }
 
-.social-buttons-fb-small {
+.social-button-fb-small {
 
-	visibility:visible;
+	visibility: visible;
 	height: auto;
 	width: auto;
 
+}
+
+.social-buttons-g, .social-buttons-twit, .social-buttons-su {
+
+	margin-right: 4px;
 }
