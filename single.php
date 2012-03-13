@@ -1,6 +1,12 @@
 <?php get_header(); ?>
 	
-    <div id="tf-left-column" class="border-styles layout-container">
+	<div id="more-left-column" class="border-styles layout-container">
+	
+		<?php include ('sidebar-left.php'); ?>
+	
+	</div>
+    
+	<div id="tf-left-column" class="border-styles layout-container">
     
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     
@@ -10,9 +16,11 @@
             
             <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
                 
+				<?php include (STYLESHEETPATH . '/inc/meta.php' ); ?>
+				
                 <h2><?php the_title(); ?></h2>
                 
-                <?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
+               <div class="author-area">By: <?php the_author(); ?> / </div> 
         
                 <div class="entry">
                     
