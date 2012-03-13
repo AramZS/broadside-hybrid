@@ -1,5 +1,5 @@
 <?php
-if ( is_home() ) {
+if ( is_home() && !is_paged() ) {
 
 	global $options;
 	foreach ($options as $value) {
