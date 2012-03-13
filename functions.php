@@ -33,4 +33,18 @@ if ( function_exists( 'add_theme_support' ) ) {
 if ( function_exists( 'add_image_size' ) ) { 
 	add_image_size( 'main-thumb', 458, 310, true ); //(hard cropped)}
 }
+
+//Adds some nifty stuff to your userprofile so I can call it later.
+function my_new_profilemethods( $profilemethods ) {
+    //Add user title
+	$contactmethods['authortitle'] = 'The position title of the user.';
+	// Add Twitter
+    $contactmethods['twitter'] = 'Twitter name without the "@"';
+    //add Facebook
+    $contactmethods['facebookURL'] = 'Facebook profile URL'; 
+	//Add Google Plus. 
+	$contactmethods['gplusURL'] = 'Google Profile URL for authorid. Should look like https://plus.google.com/108109243710611392513/posts'; 
+    return $contactmethods;
+}
+add_filter('user_contactmethods','my_new_profilemethods',10,1);
 ?>

@@ -20,7 +20,21 @@
 				
                 <h2><?php the_title(); ?></h2>
                 
-               <div class="author-area">By: <?php the_author(); ?> / </div> 
+				<?php
+					$authorTitle = get_the_author_meta('authortitle');
+					$authorTitleMeta = str_word_count($authorTitle);
+					
+				?>
+				
+               <div class="author-area">By: <?php the_author(); ?>
+			   
+					<?php
+						if ( $authorTitleMeta > 0) {
+							echo " / ";
+							echo $authorTitle;
+						}
+					?>
+			   </div> 
         
                 <div class="entry">
                     
