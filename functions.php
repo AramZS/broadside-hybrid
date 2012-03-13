@@ -64,4 +64,88 @@ function bh_widgets_init() {
 }
 
 add_action( 'widgets_init', 'bh_widgets_init' );	
+
+//I've put this in the header to avoid the weird 'oh a button just appeared' effect you get when you place it in the footer. 
+
+function zs_enable_gplus() {
+
+	?>
+		<script type="text/javascript">
+		  (function() {
+			var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			po.src = 'https://apis.google.com/js/plusone.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
+	<?php
+
+}
+
+add_action ('wp_head', 'zs_enable_gplus');
+
+function zs_enable_su() {
+
+	?>
+	 <script type="text/javascript"> 
+	 (function() { 
+		 var li = document.createElement('script'); li.type = 'text/javascript'; li.async = true; 
+		 li.src = window.location.protocol + '//platform.stumbleupon.com/1/widgets.js'; 
+		 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(li, s); 
+	 })(); 
+	 </script>
+	<?php
+}
+
+add_action ('wp_head', 'zs_enable_su');
+
+
+function zs_enable_fb() {
+
+	?>
+		
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+	<?php
+}
+
+add_action ('wp_head', 'zs_enable_fb');
+
+function add_photo_credit_option( $form_fields, $post ) {  
+	
+	$form_fields['photocredit'] = array(  
+		'label' => '<span style="color:#ff0000; margin:0; padding:0;">'.__('Photo Credit', 'broadside-hybrid').'</span> <br />'.__('Add Photographer Name / Photo Type to image', 'broadside-hybrid'),
+		'input' => 'text',
+		'value' => get_post_meta($post->ID, '_photocredit', true)  
+	);
+	  
+	return $form_fields;
+}  
+
+add_filter('attachment_fields_to_edit', 'add_photo_credit_option', null, 2);
+
+// save custom option for images in media library
+
+function save_photo_credit_option($post, $attachment) {
+	if( isset($attachment['photocredit']) ){
+		update_post_meta($post['ID'], '_photocredit', $attachment['photocredit']);  
+	} 
+		
+	return $post;  
+}
+
+add_filter('attachment_fields_to_save', 'save_photo_credit_option', 10, 2);
+
+function get_the_excerpt_here($post_id)
+{
+  global $wpdb;
+  $query = "SELECT post_excerpt FROM $wpdb->posts WHERE ID = $post_id LIMIT 1";
+  $result = $wpdb->get_results($query, ARRAY_A);
+  return $result[0]['post_excerpt'];
+}
+
 ?>

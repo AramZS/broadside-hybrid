@@ -261,6 +261,12 @@ div.post .entry, div.page .entry {
 	
 }
 
+ul.sidebar li.sidebar-widget-item {
+
+	border-top-width: 3px;
+
+}
+
 #tf-right-column .sidebar h5, #left-cats .left-cat-title h5, .lower-left-widget h5 {
 
 	font-weight: bold;
@@ -393,7 +399,7 @@ ul#footer-widgets li.footer-widget-item .responsive-container {
 .author-area {
 
 	font-size: .875em;
-	margin-bottom: 16px;
+	margin-bottom: 10px;
 	font-style: italic;
 
 }
@@ -411,6 +417,67 @@ ul#footer-widgets li.footer-widget-item .responsive-container {
 	
 }
 
+.social-buttons {
+
+	float: left;
+	width: 100%;
+	margin-bottom: 6px;
+
+}
+
+.social-button {
+
+	float: left;
+	margin-bottom: 6px;
+
+}
+
+.social-buttons-fb {
+
+	width: 100%;
+
+}
+
+.social-buttons-fb-small {
+
+	visibility:hidden;
+	height: 0;
+	width: 0;
+
+}
+
+.social-buttons-g, .social-buttons-twit, .social-buttons-su {
+
+	margin-right: 10px;
+
+}
+
+.single-post-thumb {
+
+	color: white;
+	background-color: black;
+	padding-bottom: 10px;
+	margin-bottom: 12px;
+
+}
+
+.thumb-caption {
+
+	padding: 10px;
+	font-size: 12px;
+	line-height: 16px;
+	
+}
+
+.single-post-thumb-credit {
+
+	padding: 5px 10px;
+	color: #AAA;
+	font-size: 10px;
+	padding-bottom: 0;
+	
+}
+
 /** comment styling **/
 
 #respond {
@@ -418,4 +485,18 @@ ul#footer-widgets li.footer-widget-item .responsive-container {
 	padding-left: 12px;
 	padding-right: 12px;
 	
+}
+
+/** Archive page styling **/
+
+#tf-page-title {
+
+	padding: 12px 0;
+	
+}
+
+#tf-page-title h1{
+
+	margin-left: 20px;
+
 }

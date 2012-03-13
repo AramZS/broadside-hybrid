@@ -21,6 +21,32 @@
                 <h2><?php the_title(); ?></h2>
                 
 				<?php
+				
+					if (has_post_thumbnail() ) {
+					
+						echo '<div class="single-post-thumb">';
+					
+							$post_thumbnail_id = get_post_thumbnail_id( $post_id );
+						
+							the_post_thumbnail( 'main-thumb' );
+							
+							echo '<div class="thumb-caption">';
+								
+								echo get_the_excerpt_here($post_thumbnail_id);
+							
+							echo '</div>';
+							
+							echo '<div class="single-post-thumb-credit">';
+							
+								echo 'Photo by: ';
+								echo get_post_meta($post_thumbnail_id, '_photocredit', true);
+								
+							echo '</div>';
+					
+						echo '</div>';
+					}
+				?>
+				<?php
 					$authorTitle = get_the_author_meta('authortitle');
 					$authorTitleMeta = str_word_count($authorTitle);
 					
@@ -35,6 +61,8 @@
 						}
 					?>
 			   </div> 
+			   
+				<?php include (STYLESHEETPATH . '/inc/socialbuttons.php' ); ?>
         
                 <div class="entry">
                     

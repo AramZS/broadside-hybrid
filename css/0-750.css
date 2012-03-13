@@ -230,3 +230,19 @@ html.ie7 .showhide a.toggle-button
 	border-left-width: 0px;
 	
 }
+
+.social-buttons-fb-large {
+
+	visibility:hidden;
+	height: 0;
+	width: 0;
+
+}
+
+.social-buttons-fb-small {
+
+	visibility:visible;
+	height: auto;
+	width: auto;
+
+}
