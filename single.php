@@ -26,7 +26,7 @@
 					
 				?>
 				
-               <div class="author-area">By: <?php the_author(); ?>
+               <div class="author-area">By: <a href="<?php get_site_url(); ?>/author/<?php the_author_meta('user_login'); ?>/" rel="author" alt="<?php the_author(); ?>" title="<?php the_author(); ?>"><?php the_author(); ?></a>
 			   
 					<?php
 						if ( $authorTitleMeta > 0) {

@@ -34,6 +34,15 @@ foreach ($exploded_left_cats as $value) {
 	wp_reset_query();
 
 } //end foreach
-?></div><?php
+?></div>
 
+<div id="lower-left-widgets">
+	
+		<?php if ( !function_exists('dynamic_sidebar')
+				|| !dynamic_sidebar('Lower Left Sidebar') ) : ?>
+		  
+		<?php endif; ?>
+
+</div>
+<?php
 ?>

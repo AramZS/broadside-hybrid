@@ -47,4 +47,21 @@ function my_new_profilemethods( $profilemethods ) {
     return $contactmethods;
 }
 add_filter('user_contactmethods','my_new_profilemethods',10,1);
+
+function bh_widgets_init() {
+
+	if ( function_exists('register_sidebar') )
+	register_sidebar( array(
+		'name' => __( 'Lower Left Sidebar', 'broadside-hybrid' ),
+		'id' => 'lower-left-sidebar',
+		'description' => __( 'The lower-left sidebar area, below the category titles.', 'broadside-hybrid' ),
+		'before_widget' => '<div class="lower-left-widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h5>',
+		'after_title' => '</h5>',
+	) );	
+
+}
+
+add_action( 'widgets_init', 'bh_widgets_init' );	
 ?>
