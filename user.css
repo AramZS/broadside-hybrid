@@ -458,6 +458,13 @@ ul#footer-widgets li.footer-widget-item .responsive-container {
 
 }
 
+.social-button .responsive-container {
+
+	padding-top: 0;
+	
+
+}
+
 .single-post-thumb {
 
 	color: white;
@@ -504,5 +511,25 @@ ul#footer-widgets li.footer-widget-item .responsive-container {
 #tf-page-title h1{
 
 	margin-left: 20px;
+
+}
+
+/** Making some adjustments so that DISQUS comments can display correctly. **/
+
+#disqus_thread .clearfix {
+
+	visibility: visible;
+
+}
+
+#dsq-content {
+
+	margin-left: 20px!important;
+
+}
+
+#disqus_thread, #dsq-comments, #dsq-pagination, .dsq-trackback-url {
+
+	float:left!important;
 
 }

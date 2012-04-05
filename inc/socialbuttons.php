@@ -1,10 +1,11 @@
 			<div class="social-buttons">
 				<div class="social-buttons-fb social-button">
 					<div class="social-button-fb-large">
-						<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="<?php the_permalink(); ?>" show_faces="true" width="450" action="recommend" data-colorscheme="light" font=""></fb:like>
+						<div id="fb-root"></div>
+						<div class="fb-like" data-href="<?php the_permalink(); ?>" data-send="false" data-width="450" data-show-faces="true" data-action="recommend"></div>
 					</div>
 					<div class="social-button-fb-small">
-						<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="<?php the_permalink(); ?>" show_faces="true" width="295" action="recommend" data-colorscheme="light" font=""></fb:like>
+						<div class="fb-like" data-href="<?php the_permalink(); ?>" data-send="false" data-width="295" data-show-faces="true" data-action="recommend"></div>
 					</div>
 				</div>
 								
