@@ -10,6 +10,10 @@ if ( is_home() && !is_paged() ) {
 	<div class="featured-box">
 	
 		<?php 
+		
+		$k = 1;
+		
+		global $firstslide;
 		//I'm going to need to grab this stories ID and exclude it from every freaking other query on the page... ok... on the to do list.
 		$featuredstory = new WP_Query( array( 'cat' => $bh_featured_cats, 'showposts' => 5) );
 		
@@ -49,6 +53,19 @@ if ( is_home() && !is_paged() ) {
 			
 		</div>
 		<?php 
+		
+
+					/**This delivers the ID of the first post of each slide (category) to the global variable in a comma seperated list. 
+					
+					Note: This is built to scale, so no matter how many categories are used to populate the slider, the first item of every category in the slider will be excluded from the post list on the home page **/
+
+					if ($k == 1) {
+						$firstslide .= get_the_ID() . ",";
+
+					}
+					$k++;
+					if ($k > 5) { $k=1; }
+					
 		endwhile;
 		wp_reset_postdata();
 		wp_reset_query();
