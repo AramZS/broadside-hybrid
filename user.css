@@ -316,6 +316,13 @@ ul.sidebar li.sidebar-widget-item {
 	
 }
 
+.featured-box {
+
+	overflow:hidden;
+	height: 470px;
+
+}
+
 #tf-left-column .featured-box .hentry {
 
 	padding-left: 10px;
@@ -325,8 +332,66 @@ ul.sidebar li.sidebar-widget-item {
 	background-color: black;
 	color: white;
 	padding-top: 0;
+	height: 470px;
+	width:434px;
+	overflow: hidden;
+	vertical-align: bottom;
 
 }
+
+.photofiller {
+
+	border: 0;
+	background: transparent;
+	width: 458px;
+	height: 200px;
+
+
+}
+
+#slide-nav {
+
+	float:right;
+	position: relative;
+	margin-top: -42px;
+	margin-right: 22px;
+	z-index: 100;
+
+}
+
+#slide-nav img {
+
+	border: none;
+	display: block;
+
+}
+
+#slide-nav li {
+
+	width:28px;
+	float: left;
+	margin:2px;
+	list-style: none;
+	background-image: url('images/slider/navdot.png');
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+#slide-nav li.activeSlide {
+
+	background-image: url('images/slider/navdot-active.png');
+
+
+}
+
+#slide-nav li a {
+
+	border: 0;
+
+}
+
+
 
 #tf-left-column .featured-box .hentry a {
 

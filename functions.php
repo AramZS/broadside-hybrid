@@ -12,7 +12,7 @@ function zs_killer_excerpt( $text ) {
 		$text = str_replace('\]\]\>', ']]&gt;', $text);
 		$text = preg_replace('@<script[^>]*?>.*?</script>@si', '', $text);
 		$text = strip_tags($text, '<p> <strong> <bold> <i> <em> <emphasis> <del> <h1> <h2> <h3> <h4> <h5> <img>');
-		$excerpt_length = 50; //200 words for some reason... would prefer a char count. Not sure how to do it. 
+		$excerpt_length = 50; //words for some reason... would prefer a char count. Not sure how to do it. 
 		$words = explode(' ', $text, $excerpt_length + 1);
 		if (count($words)> $excerpt_length) {
 		  array_pop($words);
@@ -64,6 +64,31 @@ function bh_widgets_init() {
 }
 
 add_action( 'widgets_init', 'bh_widgets_init' );	
+
+function activate_slider() {
+
+		echo '<script type="text/javascript" src="' . get_bloginfo('stylesheet_directory') . '/inc/jquery.cycle.all.js"></script>';
+	?>
+	<script type="text/javascript">
+			$(document).ready(function () {
+				$('.featured-box').after('<ul id="slide-nav"></ul>').cycle({
+					fx: 'fade',
+					autostop: false,
+					delay: 2000,
+					timeout: 7000,
+					pause: true,
+					pager: '#slide-nav',
+					pagerAnchorBuilder: function(index) { 
+							return '<li><a href="#"><img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/images/slider/navdot-empty.png" width="28" height="28" /></a></li>'; 
+						} 
+					
+				});
+			});
+	</script>
+	<?php
+}
+
+add_action ('wp_head', 'activate_slider');
 
 //I've put this in the header to avoid the weird 'oh a button just appeared' effect you get when you place it in the footer. 
 
