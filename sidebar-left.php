@@ -16,7 +16,7 @@ foreach ($exploded_left_cats as $value) {
 			</div>
 	<?php
 	
-			$leftcatquery = new WP_Query( array( 'cat' => $value, 'offset' => 2, 'showposts' => 5) );
+			$leftcatquery = new WP_Query( array( 'cat' => $value, 'showposts' => 5, 'post__not_in' => explode(",", $firstslide)) );
 				?><ul><?php
 					while ($leftcatquery->have_posts() ) : $leftcatquery->the_post();
 						?><li>

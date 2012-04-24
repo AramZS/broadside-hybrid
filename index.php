@@ -8,8 +8,16 @@
 	</div>
 	<div id="tf-left-column" class="border-styles layout-container">
 	
-		<?php include ('featuredstory.php'); ?>
-	
+		<?php include ('featuredstory.php'); 
+		  $args = array(
+			/**Here post__not_in expects an array. You'd think you could put a comma seperated
+			string here and that would be fine, but you can't. Instead you have to explode the comma seperated list into an array**/
+			'post__not_in' => explode(",", $firstslide),
+			'posts_per_page' => get_option( 'posts_per_page' ),
+			'paged' => get_query_var('paged')
+			);	
+			query_posts($args);
+		?>
 		<?php while (have_posts()) : the_post(); ?>
 		
 			<div <?php post_class('content-container border-styles'); ?>>
