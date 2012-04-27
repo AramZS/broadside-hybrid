@@ -51,7 +51,7 @@ function bhtheme_add_admin() {
         }
     }
 
-    add_theme_page($themename." Options", "".$themename." Options", 'edit_themes', basename(__FILE__), 'bhtheme_admin');
+    add_theme_page($themename." Options", "".$themename." Options", 'edit_theme_options', basename(__FILE__), 'bhtheme_admin');
 
 }
 
