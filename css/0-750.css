@@ -259,6 +259,7 @@ div.post, div.page {
 #tf-left-column .featured-box .hentry {
 
 	margin: 0;
+	width: 300px;
 
 }
 
@@ -272,6 +273,12 @@ div.post, div.page {
 
 	margin-top: -26px;
 	
+}
+
+#tf-left-column .featured-box .hentry .entry, #tf-left-column .featured-box .hentry h2 {
+
+	width: 300px;
+
 }
 
 .meta .meta-cat, .meta .meta-slash {
